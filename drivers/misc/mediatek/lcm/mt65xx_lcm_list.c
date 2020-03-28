@@ -34,7 +34,11 @@ LCM_DSI_MODE_CON lcm_dsi_mode;
 #endif
 
 LCM_DRIVER *lcm_driver_list[] = {
-
+	
+#if defined(ST7701S_FWVGA_DSI_VDO_COE_IVO_B1)
+    &st7701s_fwvga_dsi_vdo_coe_ivo_b1_lcm_drv,
+#endif
+	
 #if defined(JD9161_FWVGA_DSI_VDO_DJ)
     &jd9161_fwvga_dsi_vdo_dj_lcm_drv,
 #endif
