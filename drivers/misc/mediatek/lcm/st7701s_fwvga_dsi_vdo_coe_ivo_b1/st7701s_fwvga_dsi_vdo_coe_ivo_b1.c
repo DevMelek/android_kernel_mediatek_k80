@@ -47,14 +47,14 @@ static LCM_UTIL_FUNCS lcm_util = {0};
 #define write_regs(addr, pdata, byte_nums)	                lcm_util.dsi_write_regs(addr, pdata, byte_nums)
 #define read_reg(cmd)   lcm_util.dsi_dcs_read_lcm_reg(cmd)
 #define wrtie_cmd(cmd)	lcm_util.dsi_write_cmd(cmd)
-
+/*
  struct LCM_setting_table {
     unsigned cmd;
     unsigned char count;
     unsigned char para_list[128];
 };
-
-
+*/
+/*
 static struct LCM_setting_table lcm_initialization_setting[] =
 {
 	{0xFF, 5, {0x77, 0x01, 0x00, 0x00, 0x10}},
@@ -105,6 +105,7 @@ static struct LCM_setting_table lcm_deep_sleep_mode_in_setting[] =
     { REGFLAG_END_OF_TABLE, 0x00, {0x00}}
 };
 
+
 static void push_table(struct LCM_setting_table *table, unsigned int count, unsigned char force_update)
 {
     unsigned int i;
@@ -129,7 +130,7 @@ static void push_table(struct LCM_setting_table *table, unsigned int count, unsi
     
 }
 
-
+*/
 // ---------------------------------------------------------------------------
 //  LCM Driver Implementations
 // ---------------------------------------------------------------------------
