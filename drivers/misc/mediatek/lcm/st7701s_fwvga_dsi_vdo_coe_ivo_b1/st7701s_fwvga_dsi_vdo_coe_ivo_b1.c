@@ -196,7 +196,7 @@ static void lcm_init(void)
 */
 }
 
-
+/*
 static void lcm_suspend(void)
 {
 	push_table(lcm_deep_sleep_mode_in_setting, sizeof(lcm_deep_sleep_mode_in_setting) / sizeof(struct LCM_setting_table), 1);
@@ -221,7 +221,7 @@ static unsigned int lcm_compare_id(void)
 {
 	return 1;
 }
-
+*/
 
 // ---------------------------------------------------------------------------
 //  Get LCM Driver Hooks
