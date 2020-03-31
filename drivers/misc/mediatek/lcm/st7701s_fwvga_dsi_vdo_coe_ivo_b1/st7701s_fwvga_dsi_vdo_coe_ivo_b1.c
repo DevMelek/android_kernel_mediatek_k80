@@ -230,8 +230,8 @@ LCM_DRIVER st7701s_fwvga_dsi_vdo_coe_ivo_b1_lcm_drv =
     .set_util_funcs = lcm_set_util_funcs,
     .get_params     = lcm_get_params,
     .init           = lcm_init,
-    .suspend        = lcm_suspend,
-    .resume         = lcm_resume,   
-    .compare_id     = lcm_compare_id,
+//    .suspend        = lcm_suspend,
+//    .resume         = lcm_resume,   
+//    .compare_id     = lcm_compare_id,
 
 };
