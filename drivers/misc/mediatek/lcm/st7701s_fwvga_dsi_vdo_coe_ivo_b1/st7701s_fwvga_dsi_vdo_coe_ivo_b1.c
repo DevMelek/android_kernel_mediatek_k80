@@ -17,8 +17,8 @@
 
 
 
-#define FRAME_WIDTH                                         (960)
-#define FRAME_HEIGHT                                        (480)
+#define FRAME_WIDTH                                         (480)
+#define FRAME_HEIGHT                                        (960)
 
 
 #define REGFLAG_DELAY               (0XFE)
