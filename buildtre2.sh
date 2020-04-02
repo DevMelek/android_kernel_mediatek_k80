@@ -122,10 +122,10 @@ clear
         COMPILED_KERNEL="out/arch/arm/boot/zImage-dtb"
 	export KBUILD_BUILD_USER=dev
         export KBUILD_BUILD_HOST=melek
-        export KNM=snowy
+        export KNM=melek
         mkdir -p out
         echo "${PURP} READING DEFCONFIG..."
-        make V060C6_defconfig O=out/ &>> defconfig.log
+        make k200_1g_debug_defconfig O=out/ &>> defconfig.log
 clear
         echo "${YLW} BUILDING KERNEL..."
         make -j4 O=out/ &>> Kernel.log
