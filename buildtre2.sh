@@ -125,7 +125,7 @@ clear
         export KNM=melek
         mkdir -p out
         echo "${PURP} READING DEFCONFIG..."
-        make k200_1g_debug_defconfig O=out/ &>> defconfig.log
+        make V060C6_defconfig O=out/ &>> defconfig.log
 clear
         echo "${YLW} BUILDING KERNEL..."
         make -j4 O=out/ &>> Kernel.log
