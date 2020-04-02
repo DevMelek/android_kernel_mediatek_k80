@@ -401,9 +401,11 @@ static unsigned int lcm_compare_id(void)
 }
 
 
-LCM_DRIVER st7701s_fwvga_dsi_vdo_ykl_lcm_drv = 
+LCM_DRIVER st7701s_fwvga_dsi_vdo_coe_ivo_b1_lcm_drv = 
 {
-    .name			= "st7701s_fwvga_dsi_vdo_ykl",
+    .name			=
+"st7701s_fwvga_dsi_vdo_coe_ivo_b1",
+
 	.set_util_funcs = lcm_set_util_funcs,
 	.get_params     = lcm_get_params,
 	.init           = lcm_init,
