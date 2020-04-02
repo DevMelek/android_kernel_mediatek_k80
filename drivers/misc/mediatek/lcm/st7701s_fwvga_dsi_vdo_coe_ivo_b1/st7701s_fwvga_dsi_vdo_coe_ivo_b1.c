@@ -242,10 +242,11 @@ static void lcm_get_params(LCM_PARAMS *params)
 		params->dbi.te_mode 				= LCM_DBI_TE_MODE_DISABLED;
 		//params->dbi.te_edge_polarity		= LCM_POLARITY_RISING;
 
-#if (LCM_DSI_CMD_MODE)
-		params->dsi.mode   = CMD_MODE;
+//#if (LCM_DSI_CMD_MODE)
+		//params->dsi.mode   = CMD_MODE;
 #else
-		params->dsi.mode   = SYNC_PULSE_VDO_MODE;
+	//	params->dsi.mode   = 
+//SYNC_PULSE_VDO_MODE;
 #endif
 	
 	
@@ -412,7 +413,6 @@ LCM_DRIVER st7701s_fwvga_dsi_vdo_coe_ivo_b1_lcm_drv =
 	.suspend        = lcm_suspend,
 	.resume         = lcm_resume,
 	.compare_id    = lcm_compare_id,	
-#if (LCM_DSI_CMD_MODE)
 	.set_backlight	= lcm_setbacklight,
     .update         = lcm_update,
 #endif
